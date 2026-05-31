@@ -3,8 +3,8 @@ name: Build Resume
 on:
   push:
     branches: [main]
-    paths:
-      - 'resume-en.yml'
+    # paths:
+    #   - 'resume-en.yml'
   pull_request:
     branches: [main]
 
