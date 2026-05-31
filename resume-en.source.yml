@@ -4,9 +4,9 @@ content:
     basics:
         name: Mark Buje Hein Sørensen
         headline: Experimental & Computational Physics | Neutron & X‑ray Scattering · Neutronics · Materials Science
-        phone: ""
-        email: ""
-        url: ""
+        # phone: ""
+        # email: ""
+        # url: ""
         # All summary fields supports a limited rich text capabilities in markdown
         # syntax:
         #
@@ -15,11 +15,10 @@ content:
         # - ordered list, unordored list and nested sub list
         # - links (e.g. `[link](https://ppresume.com)`)
         summary: |
-            - **MSc Research**: Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data; thesis grade 12 (A); viva May 2026.
-            - **Beamline Experience**: Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, B07 VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
-            - **Nanoscience**: Broad experimental, computational, and analysis experience across physics, materials engineering, and bioengineering.
-            - **Computation & ML: Python, Monte‑Carlo simulation (McStas), Mantid data pipelines; developed Graph Neural Networks and applied‑statistics pipelines for large scientific datasets.
-            - **Statistics & ML**: Python-based data analysis, applied statistics & ML, Monte‑Carlo simulation (incl. McStas, NCrystal) and Mantid workflows; implemented GNN for anylysis of data from test beamline being developed for CERN.
+            - "MSc Research: Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data; thesis grade 12 (A); viva May 2026."
+            - "Beamline Experience: Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, B07 VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection."
+            - "Nanoscience: Broad experimental, computational, and analysis experience across physics, materials engineering, and bioengineering."
+            - "Statistics & ML: Python-based data analysis, applied statistics & ML, Monte‑Carlo simulation (incl. McStas, NCrystal) and Mantid workflows; implemented GNN for anylysis of data from test beamline being developed for CERN."
     
       location:
         address: ""
