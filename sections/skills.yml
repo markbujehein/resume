@@ -1,0 +1,63 @@
+# Valid skill level options:
+#
+# - 'Novice'
+# - 'Beginner'
+# - 'Intermediate'
+# - 'Advanced'
+# - 'Expert'
+# - 'Master'
+
+- name: Machine Learning & Data Analysis
+  level: Intermediate
+  keywords:
+    - Applied Statistics
+    - Neural Networks
+    - Decicison trees
+    - Supervised Learning
+    - Unsupervised Learning
+    - Monte Carlo simulation
+    - SasView
+    - Mantid
+    - ATSAS
+    - FullProf
+
+- name: Programming & Software
+  level: Advanced
+  keywords:
+    - Python
+    - Bash
+    - Git
+    - LaTeX
+    - YAML
+    - Typst
+    - HTML
+    - CSS
+
+- name: Lanotechnology Lab Techniques
+  level: Intermediate
+  keywords:
+    - FTIR
+    - RT-PCR
+    - SDS-PAGE
+    - Agarose gel electrophoresis
+    - AFM
+    - Microfluidics
+    - UV‑Vis spectroscopy
+    - Fluorescence spectroscopy
+    - UV Lithography
+    - Evolved gas analysis
+    - GC
+    - DSC
+    - Nanoparticle Tracking Analysis
+
+- name: Project Management & Collaboration
+  level: Intermediate
+  keywords:
+    - Budget management
+    - Workshopping
+    - Classroom leadership
+    - Project planning
+    - Stakeholder communication
+    - Volunteer leadership
+    - Networking
+ 
