@@ -4,9 +4,9 @@ content:
     basics:
     name: Mark Buje Hein Sørensen
     headline: Experimental & Computational Physics | Neutron & X‑ray Scattering · Neutronics · Materials Science
-    # phone: ""
-    # email: 
-    # url: 
+    phone: ""
+    email: ""
+    url: ""
     # All summary fields supports a limited rich text capabilities in markdown
     # syntax:
     #
@@ -21,12 +21,12 @@ content:
       - **Computation & ML: Python, Monte‑Carlo simulation (McStas), Mantid data pipelines; developed Graph Neural Networks and applied‑statistics pipelines for large scientific datasets.
       - **Statistics & ML**: Python-based data analysis, applied statistics & ML, Monte‑Carlo simulation (incl. McStas, NCrystal) and Mantid workflows; implemented GNN for anylysis of data from test beamline being developed for CERN.
     
-  # location:
-  #   address: 123 Main Street
-  #   city: Sacramento
-  #   region: California
-  #   country: United States
-  #   postalCode: "95814"
+  location:
+    address: ""
+    city: Copenhagen
+    region: ""
+    country: Denmark
+    postalCode: ""
   profiles:
     - network: LinkedIn
       url: https://www.linkedin.com/in/mbhs%C3%B8rensen/
@@ -55,7 +55,7 @@ content:
   
   skills: !include sections/skills.yml
 
-  # references:
+  # references: []
   #   - name: Dr. Amanda Reynolds
   #     phone: "(555) 123-4567"
   #     relationship: Computer Science Professor
@@ -63,7 +63,7 @@ content:
   #     summary: |
   #       Andy Dufresne shows exceptional problem-solving skills and a solid understanding of programming concepts, he would bring immense value to any team or organization he becomes a part of.
 
-  # projects:
+  # projects: []
   #   - name: EduWeb
   #     url: https://www.eduweb.xyz/
   #     description: A web-based educational platform for interactive learning
