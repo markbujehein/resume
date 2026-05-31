@@ -41,7 +41,9 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: resumes
-          path: ${{ steps.build.outputs.pdf-files }}
+          path: |
+            *.pdf
+            *.tex
           retention-days: 7   # Automatically deletes old artifacts to save storage space
 
   release:
