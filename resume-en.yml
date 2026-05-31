@@ -98,15 +98,15 @@ content:
     # - 'Minimum Professional Proficiency'
     # - 'Full Professional Proficiency'
     # - 'Native or Bilingual Proficiency'
-    - language: English
-        fluency: Native or Bilingual Proficiency
-        keywords: []
-    - language: Danish
-        fluency: Native or Bilingual Proficiency
-        keywords: []
-    - language: German
-        fluency: Minimum Professional Proficiency
-        keywords: []
+        - language: English
+            fluency: Native or Bilingual Proficiency
+            keywords: []
+        - language: Danish
+            fluency: Native or Bilingual Proficiency
+            keywords: []
+        - language: German
+            fluency: Minimum Professional Proficiency
+            keywords: []
     
     # skills: !include sections/skills.yml
     
