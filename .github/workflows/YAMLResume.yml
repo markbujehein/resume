@@ -13,12 +13,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Resolve !include tags
-        run: |
-          # Use yq to find any nodes with the !include tag and substitute them with the external file
-          yq eval '
-            .. | select(tag == "!include") |= load(.)
-          ' resume-en.source.yml > resume-en.yml
+      # - name: Resolve !include tags
+      #   run: |
+      #     # Use yq to find any nodes with the !include tag and substitute them with the external file
+      #     yq eval '
+      #       .. | select(tag == "!include") |= load(.)
+      #     ' resume-en.source.yml > resume-en.yml
 
       - name: Build resumes
         id: build
