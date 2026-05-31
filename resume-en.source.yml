@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=https://yamlresume.dev/schema.json
+---
+content:
+    basics:
+    name: Mark Buje Hein Sørensen
+    headline: Experimental & Computational Physics | Neutron & X‑ray Scattering · Neutronics · Materials Science
+    # phone: ""
+    # email: 
+    # url: 
+    # All summary fields supports a limited rich text capabilities in markdown
+    # syntax:
+    #
+    # - bold, (e.g, `**bold**`)
+    # - italic, (e.g, `*italic*`)
+    # - ordered list, unordored list and nested sub list
+    # - links (e.g. `[link](https://ppresume.com)`)
+    summary: |
+      - **MSc Research**: Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data; thesis grade 12 (A); viva May 2026.
+      - **Beamline Experience**: Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, B07 VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
+      - **Nanoscience**: Broad experimental, computational, and analysis experience across physics, materials engineering, and bioengineering.
+      - **Computation & ML: Python, Monte‑Carlo simulation (McStas), Mantid data pipelines; developed Graph Neural Networks and applied‑statistics pipelines for large scientific datasets.
+      - **Statistics & ML**: Python-based data analysis, applied statistics & ML, Monte‑Carlo simulation (incl. McStas, NCrystal) and Mantid workflows; implemented GNN for anylysis of data from test beamline being developed for CERN.
+    
+  # location:
+  #   address: 123 Main Street
+  #   city: Sacramento
+  #   region: California
+  #   country: United States
+  #   postalCode: "95814"
+  profiles:
+    - network: LinkedIn
+      url: https://www.linkedin.com/in/mbhs%C3%B8rensen/
+      username: mbhsørensen
+  
+  education: !include sections/education.yml
+  work: !include sections/work.yml
+
+  languages:
+    # Valid language fluency options:
+    #
+    # - 'Elementary Proficiency'
+    # - 'Limited Working Proficiency'
+    # - 'Minimum Professional Proficiency'
+    # - 'Full Professional Proficiency'
+    # - 'Native or Bilingual Proficiency'
+    - language: English
+      fluency: Native or Bilingual Proficiency
+      keywords: []
+    - language: Danish
+      fluency: Native or Bilingual Proficiency
+      keywords: []
+    - language: German
+      fluency: Minimum Professional Proficiency
+      keywords: []
+  
+  skills: !include sections/skills.yml
+
+  # references:
+  #   - name: Dr. Amanda Reynolds
+  #     phone: "(555) 123-4567"
+  #     relationship: Computer Science Professor
+  #     email: amanda.reynolds@usc.edu
+  #     summary: |
+  #       Andy Dufresne shows exceptional problem-solving skills and a solid understanding of programming concepts, he would bring immense value to any team or organization he becomes a part of.
+
+  # projects:
+  #   - name: EduWeb
+  #     url: https://www.eduweb.xyz/
+  #     description: A web-based educational platform for interactive learning
+  #     startDate: Sep 2016
+  #     endDate: Dec 2016
+  #     summary: |
+  #       - Designed to enhance online learning experiences
+  #       - Facilitates students' engagement and collaboration through interactive features and user-friendly interface
+  #       - Offers a wide range of courses across various subjects
+  #       - Aims to improve the way students learn through the power of the web
+  #     keywords:
+  #       - Education
+  #       - Online Learning
+  #       - HCI
+
+  interests:
+    - name: Physical Pursuits
+      keywords:
+        - Bouldering
+        - Gymnastics Rings
+        - Calisthenics
+        - Hiking
+    - name: Culinary
+      keywords:
+        - Practical Gastronomy
+        - Coffee Brewing
+        - food science
+
+volunteer: !include sections/volunteer.yml
+
+locale:
+  language: en
+
+layouts:
+  - engine: latex
+    template: moderncv-banking
+    typography:
+      # LaTeX engine only supports 10pt, 11pt, and 12pt
+      fontSize: 11pt
