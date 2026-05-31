@@ -53,7 +53,7 @@ jobs:
       
     steps:
       - name: Download compiled resumes
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v8
         with:
           name: resumes
 
