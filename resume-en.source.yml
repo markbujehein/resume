@@ -32,8 +32,65 @@ content:
           url: https://www.linkedin.com/in/mbhs%C3%B8rensen/
           username: mbhsørensen
       
-      education: !include sections/education.yml
-      work: !include sections/work.yml
+      # education: !include sections/education.yml
+      education:
+        - institution: University of Copenhagen
+          url: https://www.ku.dk/en
+          # Valid degree options:
+          #
+          # - 'Middle School'
+          # - 'High School'
+          # - 'Diploma'
+          # - 'Associate'
+          # - 'Bachelor'
+          # - 'Master'
+          # - 'Doctor'
+          degree: Bachelor
+          area: Nanoscience
+          score: ""
+          # parseable date string
+          startDate: Sep 1, 2023
+          # Leave endDate blank to indicate "Present" (if applicable)
+          endDate: Feb 1, 2025
+          courses:
+            - "Thermodynamics and Kinetics"
+            - "Applied Statistics"
+            - "Molecular Statistics"
+            - "Quantum Phenomena in Nano Systems"
+            - "Gene Technology"
+            - "Protein Physics"
+            - "Optics and Spectroscopy"
+            - "Classical Mechanics, Electromagnetism, Quantum Mechanics, Statistical Physics, Condensed Matter Physics"
+            - "Inorganic Chemistry, Organic Chemistry, Biochemistry"
+            - "Microbiology"
+          summary: |
+            - **Extended Credit (232.5 ECTS)**: Fundamentally interdisciplinary education with an extended credit total due to a transfer from Aalborg University (Nanotechnology) to the University of Copenhagen (Nanoscience).
+            - **Materials Characterisation & Fabrication (AAU)**: Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects, as per the problem- & project-based learning (PBL) model.
+            - **Theoretical & Computational Physics (UCPH)**: Bridged practical engineering with fundamental physics and chemistry, focusing heavily on computational simulation & data analysis using Python and numerous software suites.
+            - **Interdisciplinary Scope**: Broad set of knowledge, skills, and competences across physics, materials engineering, and bioengineering.
+        
+        - institution: University of Copenhagen
+          url: https://www.ku.dk/en
+          degree: Master
+          area: "Nanoscience — Neutron & X-ray Science"
+          score: "Grade 12 (A) for 60 ECTS Master's Thesis"
+          startDate: Sep 1, 2024
+          endDate: Jul 1, 2026
+          courses:
+            - "Experimental X-ray Physics"
+            - "Neutron Scattering"
+            - "Applications of X-ray and Neutron Scattering in Biology, Chemistry and Physics"
+            - "Applied Machine Learning"
+            - "Quantum Nanoelectronics"
+            - "Computational Chemistry"
+          summary: |
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Assoc. Prof. Dr. Heloisa Bordallo, NBI, & Dr. Svemir Rudić, ISIS).
+            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV Laboratory (CoSAXS), Paul Scherrer Institut (CAMEA), and Diamond Light Source (VerSoX).
+            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
+            - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organizational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
+        
+      
+      # work: !include sections/work.yml
     
       languages:
         # Valid language fluency options:
@@ -53,7 +110,7 @@ content:
           fluency: Minimum Professional Proficiency
           keywords: []
       
-      skills: !include sections/skills.yml
+      # skills: !include sections/skills.yml
     
       # references: []
       #   - name: Dr. Amanda Reynolds
@@ -92,7 +149,7 @@ content:
             - Coffee Brewing
             - food science
     
-    volunteer: !include sections/volunteer.yml
+    # volunteer: !include sections/volunteer.yml
     
 locale:
   language: en
