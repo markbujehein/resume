@@ -136,16 +136,16 @@ content:
     
     interests:
         - name: Physical Pursuits
-            keywords:
-                - Bouldering
-                - Gymnastics Rings
-                - Calisthenics
-                - Hiking
+          keywords:
+            - Bouldering
+            - Gymnastics Rings
+            - Calisthenics
+            - Hiking
         - name: Culinary
-            keywords:
-                - Practical Gastronomy
-                - Coffee Brewing
-                - food science
+          keywords:
+            - Practical Gastronomy
+            - Coffee Brewing
+            - food science
     
     # volunteer: !include sections/volunteer.yml
     
@@ -154,7 +154,7 @@ locale:
 
 layouts:
     - engine: latex
-        template: moderncv-banking
-        typography:
-            # LaTeX engine only supports 10pt, 11pt, and 12pt
-            fontSize: 11pt
+      template: moderncv-banking
+      typography:
+        # LaTeX engine only supports 10pt, 11pt, and 12pt
+        fontSize: 11pt
