@@ -12,6 +12,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,8 +38,33 @@ jobs:
           verbose: true
 
       - name: Upload PDF artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: resumes
           path: ${{ steps.build.outputs.pdf-files }}
           retention-days: 7   # Automatically deletes old artifacts to save storage space
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Download compiled resumes
+        uses: actions/download-artifact@v3
+        with:
+          name: resumes
+
+      - name: Create GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Use the execution run number as a unique, non-colliding tag identifier
+          TAG_NAME="v${{ github.run_number }}"
+          
+          gh release create "$TAG_NAME" \
+            --title "Resume Version $TAG_NAME" \
+            --notes "Automated compiled production artifacts generated from commit ${{ github.sha }}." \
+            *.pdf *.tex
