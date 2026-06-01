@@ -1,11 +1,3 @@
-# yaml-language-server: $schema=https://yamlresume.dev/schema.json
-#
-# YAMLResume provides a builtin schema to validate resumes and help avoid lots
-# of low level mistakes.
-#
-# ref:
-# - https://yamlresume.dev/docs/compiler/schema
-# - https://yamlresume.dev/docs/compiler/schema/json
 ---
 content:
     basics:
@@ -57,7 +49,7 @@ content:
             - "Quantum Nanoelectronics"
             - "Computational Chemistry"
           summary: |
-            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data from VESUVIO and TOSCA (Supervisors: Heloisa Bordallo, NBI, & Svemir Rudić, ISIS). Was taught data reduction and data analysis of QENS, Neutron Compton Scattering, and Neutron Diffraction.
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa N. Bordallo & Svemir Rudić). Was taught data reduction and data analysis of QENS, Neutron Compton Scattering, and Neutron Diffraction.
             - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
             - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
             # - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
@@ -245,13 +237,13 @@ content:
     volunteer:
     
       - organization: "Radikale Venstre"
-        url: ""
+        # url: ""
         position: "Member of the Board"
         startDate: "Sep, 2025"
         # endDate: ""
     
       - organization: "IDA"
-        url: ""
+        # url: ""
         position: "Member of the Board of Representatives"
         startDate: "Nov 1, 2023"
         endDate: "Mar 1, 2025"
@@ -259,7 +251,7 @@ content:
         #   - Served as a member of the Board of Representatives for IDA, representing student memebers.
 
       - organization: "IDA"
-        url: ""
+        # url: ""
         position: "Member, Higher Education & Research Committee"
         startDate: "Mar 1, 2024"
         endDate: "Mar 1, 2025"
@@ -267,7 +259,7 @@ content:
         #   - Participated on the Higher Education & Research Committee advising on topics driven by IDA strategies and national politics.
 
       - organization: "IDA STEM Students"
-        url: ""
+        # url: ""
         position: "Board Member (Executive Committee)"
         startDate: "Feb 1, 2024"
         endDate: "Mar 1, 2026"
@@ -275,8 +267,8 @@ content:
           - Policy Officer - Higher Education.
 
       - organization: "Radikale Venstre"
-        url: ""
-        position: "Committee Chair, Policy Development Group (Forskningsreserven 2024)"
+        # url: ""
+        position: "Committee Chair, Policy Development Group"
         startDate: "Mar 1, 2023"
         endDate: "Dec 1, 2023"
         summary: |
@@ -285,7 +277,7 @@ content:
           - Coordinated and led drafting of policy inputs, creating recomedations for party MPs.
 
       - organization: "Studentersamfundet (Aalborg University)"
-        url: ""
+        # url: ""
         position: "Tutor (Rusvejleder) & Kitchen Manager (Orientation)"
         startDate: "Sep 1, 2020"
         endDate: "Dec 31, 2022"
@@ -295,13 +287,11 @@ content:
           - Trained and supervised volunteers; helped run events and logistics during orientation periods.
         
       - organization: "Aalborg City Gymnasium"
-        url: ""
+        # url: ""
         position: "Chair of the Student Council"
         startDate: "Oct, 2017"
         endDate: "Jun, 2018"
 
-  
-    
 locale:
     language: en
 
