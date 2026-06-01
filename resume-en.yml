@@ -1,8 +1,16 @@
+# yaml-language-server: $schema=https://yamlresume.dev/schema.json
+#
+# YAMLResume provides a builtin schema to validate resumes and help avoid lots
+# of low level mistakes.
+#
+# ref:
+# - https://yamlresume.dev/docs/compiler/schema
+# - https://yamlresume.dev/docs/compiler/schema/json
 ---
 content:
     basics:
         name: Mark Buje Hein Sørensen
-        headline: Experimental & Computational Physics | Neutron & X‑ray Scattering · Neutronics · Materials Science
+        headline: Neutron & X‑ray Scattering · Neutronics · Materials Science · Computational Chemistry
         # phone: ""
         # email: ""
         # url: ""
@@ -86,9 +94,27 @@ content:
             - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Assoc. Prof. Dr. Heloisa Bordallo, NBI, & Dr. Svemir Rudić, ISIS).
             - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV Laboratory (CoSAXS), Paul Scherrer Institut (CAMEA), and Diamond Light Source (VerSoX).
             - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
-            - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organizational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
+            - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
 
     # work: !include sections/work.yml
+    work:
+    - name: Studentersamfundet v/ Aalborg University
+        url: ""
+        startDate: Sep, 2021
+        endDate: Apr, 2023
+        position: "Treasurer (Financial Officer)"
+        summary: |
+          - Responsible for financial management and strategic planning of a large student organisation; oversaw an annual budget exceeding DKK 1.5M.
+          - Supervised the Business Team and monitored revenue from multiple student bars.
+          - Implemented cost-saving measures, including transitioning the physical magasine to a digital format to address rising costs.
+          - Participated in hiring processes and collaborated with the board to improve financial transparency.
+          - Trained volunteers in very basic budgeting and microeconomics.
+        keywords: |
+          - Financial management
+          - Budgeting
+          - Strategic planning
+          - Volunteer training
+          - Team leadership    
     
     languages:
     # Valid language fluency options:
@@ -109,7 +135,70 @@ content:
           keywords: []
     
     # skills: !include sections/skills.yml
-    
+    skills:
+    # Valid skill level options:
+    #
+    # - 'Novice'
+    # - 'Beginner'
+    # - 'Intermediate'
+    # - 'Advanced'
+    # - 'Expert'
+    # - 'Master'
+
+    - name: Machine Learning & Data Analysis
+      level: Intermediate
+      keywords:
+        - Applied Statistics
+        - Neural Networks
+        - Decicison trees
+        - Supervised Learning
+        - Unsupervised Learning
+        - Monte Carlo simulation
+        - SasView
+        - Mantid
+        - ATSAS
+        - FullProf
+        
+    - name: Programming & Software
+      level: Advanced
+      keywords:
+        - Python
+        - Bash
+        - Git
+        - LaTeX
+        - YAML
+        - Typst
+        - HTML
+        - CSS
+
+    - name: Lanotechnology Lab Techniques
+      level: Intermediate
+      keywords:
+        - FTIR
+        - RT-PCR
+        - SDS-PAGE
+        - Agarose gel electrophoresis
+        - AFM
+        - Microfluidics
+        - UV‑Vis spectroscopy
+        - Fluorescence spectroscopy
+        - UV Lithography
+        - Evolved gas analysis
+        - GC
+        - DSC
+        - Nanoparticle Tracking Analysis
+
+    - name: Project Management & Collaboration
+      level: Intermediate
+      keywords:
+        - Budget management
+        - Workshopping
+        - Classroom leadership
+        - Project planning
+        - Stakeholder communication
+        - Volunteer leadership
+        - Networking
+        
     # references: []
     #   - name: Dr. Amanda Reynolds
     #     phone: "(555) 123-4567"
