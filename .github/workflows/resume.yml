@@ -2,7 +2,7 @@ name: Build and Deploy Resume
 
 on:
   workflow_run:
-    workflows: ["Spellcheck"]
+    workflows: ["Spellcheck Workflow"]
     types: [completed]
   workflow_dispatch:
     inputs:
