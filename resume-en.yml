@@ -98,7 +98,7 @@ content:
 
     # work: !include sections/work.yml
     work:
-    - name: Studentersamfundet v/ Aalborg University
+      - name: Studentersamfundet v/ Aalborg University
         url: ""
         startDate: Sep, 2021
         endDate: Apr, 2023
