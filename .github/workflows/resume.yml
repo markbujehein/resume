@@ -3,8 +3,6 @@ name: Build Resume
 on:
   push:
     branches: [main]
-    # paths:
-    #   - 'resume-en.yml'
   pull_request:
     branches: [main]
 
@@ -16,62 +14,37 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  build-and-release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        
-      # - name: Resolve !include tags
-      #   run: |
-      #     # Use yq to find any nodes with the !include tag and substitute them with the external file
-      #     yq eval '
-      #       .. | select(tag == "!include") |= load(.)
-      #     ' resume-en.source.yml > resume-en.yml
-      
+
       - name: Build resumes
         id: build
-        uses: yamlresume/action@v0.2.2
+        uses: yamlresume/action@main
         with:
           resumes: |
             resume-en.yml
-          verbose: true
+          verbose: false
 
-      - name: Upload PDF artifacts
-        uses: actions/upload-artifact@v7
-        with:
-          name: resumes
-          path: |
-            output/generated/*.pdf
-            output/generated/*.tex
-          retention-days: 7
-
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    permissions:
-      contents: write
-    steps:
-      - name: Download compiled resumes
-        uses: actions/download-artifact@v4
-        with:
-          name: resumes
-          path: cv-artifacts   # Downloads into a specific folder to match your previous setup
-
+      # The following steps will only execute on the main branch
       - name: Get current date for tag
+        if: github.ref == 'refs/heads/main'
         id: date
         run: echo "date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_OUTPUT
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: resume-${{ steps.date.outputs.date }}
           name: Resume Build ${{ steps.date.outputs.date }}
           body: |
             Automated production artifacts generated from commit ${{ github.sha }}.
           files: |
-            cv-artifacts/*.pdf
-            cv-artifacts/*.tex
-          draft: false
-          prerelease: false
+            *.pdf
+            *.tex
+          draft: true
+          prerelease: true
+
