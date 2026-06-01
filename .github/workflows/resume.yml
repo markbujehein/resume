@@ -1,10 +1,9 @@
 name: Build and Deploy Resume
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_run:
+    workflows: ["Spellcheck"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       version:
