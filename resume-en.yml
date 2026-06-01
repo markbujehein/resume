@@ -300,6 +300,7 @@ locale:
 
 layouts:
     - engine: latex
+      template: jake
       sections:
         order:
           - basics
