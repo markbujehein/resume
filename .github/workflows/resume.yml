@@ -75,6 +75,8 @@ jobs:
       - name: Process with Copilot CLI
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.copilot_actions }}
+          GH_TOKEN: ${{ secrets.copilot_actions }}
+          GITHUB_TOKEN: ${{ secrets.copilot_actions }}
         run: |
           copilot -p "Read the file resume-en.md. Clean up any formatting issues and ensure proper Markdown syntax. Maintain the structure and hierarchy, and remove any weird formatting artifacts. Keep the content exactly the same. IMPORTANT: Obfuscate sensitive information. Replace email addresses with the format 'username [dot] domain [at] tld' (e.g., john.doe@gmail.com -> john [dot] doe [at] gmail [dot] com). Replace phone numbers with spelled-out words for the numbers (e.g., +1-(123) 456-7890 -> +1-(123) four five six seven eight nine zero). Overwrite the file resume-en.md with the clean output." --allow-tool='shell(cat:*)' --allow-tool=write --no-ask-user
 
