@@ -37,6 +37,6 @@ jobs:
           files: |
             *.pdf
             *.tex
-            *.yaml
+            *.md
           draft: false
           prerelease: false
