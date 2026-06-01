@@ -90,7 +90,7 @@ content:
 
     # work: !include sections/work.yml
     work:
-      - name: Studentersamfundet v/ Aalborg University
+      - name: Studentersamfundet – The Student Society at Aalborg University
         # url: ""
         startDate: Sep, 2021
         endDate: Apr, 2023
@@ -235,13 +235,13 @@ content:
     # volunteer: !include sections/volunteer.yml
     volunteer:
     
-      - organization: "Radikale Venstre"
+      - organization: "Radikale Venstre – Danish Social Liberal Party"
         # url: ""
         position: "Member of the Board"
         startDate: "Sep, 2025"
         # endDate: ""
     
-      - organization: "IDA"
+      - organization: "IDA – The Danish Society of STEM Professionals"
         # url: ""
         position: "Member of the Board of Representatives"
         startDate: "Nov 1, 2023"
@@ -249,7 +249,7 @@ content:
         # summary: |
         #   - Served as a member of the Board of Representatives for IDA, representing student memebers.
 
-      - organization: "IDA"
+      - organization: "IDA – The Danish Society of STEM Professionals"
         # url: ""
         position: "Member, Higher Education & Research Committee"
         startDate: "Mar 1, 2024"
@@ -265,7 +265,7 @@ content:
         summary: |
           - Policy Officer - Higher Education.
 
-      - organization: "Radikale Venstre"
+      - organization: "Radikale Venstre – Danish Social Liberal Party"
         # url: ""
         position: "Committee Chair, Policy Development Group"
         startDate: "Mar 1, 2023"
@@ -275,7 +275,7 @@ content:
           - Sought expert advice and developed an elaborate workshop protocol for an initial working meeting.
           - Coordinated and led drafting of policy inputs, creating recommendations for party MPs.
 
-      - organization: "Studentersamfundet (Aalborg University)"
+      - organization: "Studentersamfundet – The Student Society at Aalborg University"
         # url: ""
         position: "Tutor (Rusvejleder) & Kitchen Manager (Orientation)"
         startDate: "Sep 1, 2020"
