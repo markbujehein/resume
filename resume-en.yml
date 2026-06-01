@@ -10,7 +10,8 @@
 content:
     basics:
         name: Mark Buje Hein Sørensen
-        headline: Neutron & X‑ray Scattering · Neutronics · Materials Science · Computational Chemistry
+        # headline: Neutron & X‑ray Scattering · Neutronics · Materials Science · Computational Chemistry
+        headline: Nanoscientist | Neutron & X‑ray Scattering | Materials Science
         # phone: ""
         # email: ""
         # url: ""
@@ -41,6 +42,26 @@ content:
       
     # education: !include sections/education.yml
     education:
+        - institution: University of Copenhagen
+          # url: https://www.ku.dk/
+          degree: Master
+          area: "Nanoscience — Neutron & X-ray Science"
+          # score: "Grade 12 (A) for 60 ECTS Master's Thesis"
+          startDate: Sep 1, 2024
+          endDate: Jul 1, 2026
+          courses:
+            - "Experimental X-ray Physics"
+            - "Neutron Scattering"
+            - "Applications of X-ray and Neutron Scattering in Biology, Chemistry and Physics"
+            - "Applied Machine Learning"
+            - "Quantum Nanoelectronics"
+            - "Computational Chemistry"
+          summary: |
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa Bordallo, NBI, & Svemir Rudić, ISIS).
+            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
+            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
+            # - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
+
         - institution: University of Copenhagen
           # url: https://www.ku.dk/
           # Valid degree options:
@@ -75,26 +96,6 @@ content:
             - **Materials Characterisation & Fabrication (AAU)**: Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects, as per the problem- & project-based learning (PBL) model.
             - **Theoretical & Computational Physics (UCPH)**: Bridged practical engineering with fundamental physics and chemistry, focusing heavily on computational simulation & data analysis using Python and numerous software suites.
             - **Interdisciplinary Scope**: Broad set of knowledge, skills, and competences across physics, materials engineering, and bioengineering.
-        
-        - institution: University of Copenhagen
-          # url: https://www.ku.dk/
-          degree: Master
-          area: "Nanoscience — Neutron & X-ray Science"
-          # score: "Grade 12 (A) for 60 ECTS Master's Thesis"
-          startDate: Sep 1, 2024
-          endDate: Jul 1, 2026
-          courses:
-            - "Experimental X-ray Physics"
-            - "Neutron Scattering"
-            - "Applications of X-ray and Neutron Scattering in Biology, Chemistry and Physics"
-            - "Applied Machine Learning"
-            - "Quantum Nanoelectronics"
-            - "Computational Chemistry"
-          summary: |
-            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa Bordallo, NBI, & Svemir Rudić, ISIS).
-            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
-            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
-            # - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
 
     # work: !include sections/work.yml
     work:
@@ -157,7 +158,7 @@ content:
         - ATSAS
         - FullProf
         
-    - name: Programming & Software
+    - name: Programming & Markup Languages
       level: Advanced
       keywords:
         - Python
@@ -235,6 +236,64 @@ content:
             - food science
     
     # volunteer: !include sections/volunteer.yml
+    volunteer:
+      - organization: "IDA"
+        url: ""
+        position: "Member of the Board of Representatives"
+        startDate: "Nov 1, 2023"
+        endDate: "Mar 1, 2025"
+        # summary: |
+        #   - Served as a member of the Board of Representatives for IDA, representing student memebers.
+
+      - organization: "IDA"
+        url: ""
+        position: "Member, Higher Education & Research Committee"
+        startDate: "Mar 1, 2024"
+        endDate: "Mar 1, 2025"
+        # summary: |
+        #   - Participated on the Higher Education & Research Committee advising on topics driven by IDA strategies and national politics.
+
+    - organization: "IDA STEM Students"
+      url: ""
+      position: "Board Member (Executive Committee)"
+      startDate: "Feb 1, 2024"
+      endDate: "Mar 1, 2026"
+      summary: |
+        - Policy Officer - Higher Education.
+
+    - organization: "Radikale Venstre"
+      url: ""
+      position: "Committee Chair, Policy Development Group (Forskningsreserven 2024)"
+      startDate: "Mar 1, 2023"
+      endDate: "Dec 1, 2023"
+      summary: |
+        - Chaired a policy development group focused on Forskningsreserven 2024.
+        - Saught expert advice and developed eleborate workshop protocol for initial work weeking.
+        - Coordinated and led drafting of policy inputs, creating recomedations for party MPs.
+
+        - organization: "Radikale Venstre"
+          url: ""
+          position: "Member of the Board"
+          startDate: "2025"
+          # endDate: ""
+
+    - organization: "Studentersamfundet (Aalborg University)"
+      url: ""
+      position: "Tutor (Rusvejleder) & Kitchen Manager (Orientation)"
+      startDate: "Sep 1, 2020"
+      endDate: "Dec 31, 2022"
+      summary: |
+        - Volunteered as a tutor and orientation leader, supporting new students in physics and engineering.
+        - Served as kitchen manager during orientation courses, organising catering and volunteer shifts.
+        - Trained and supervised volunteers; helped run events and logistics during orientation periods.
+
+    - organization: "Aalborg City Gymnasium"
+      url: ""
+      position: "Chair of the Student Council"
+      startDate: "Oct, 2017"
+      endDate: "Jun, 2018"
+
+  
     
 locale:
     language: en
@@ -243,10 +302,9 @@ layouts:
     - engine: latex
       sections:
         order:
+          - basics
           - education
           - volunteer
-          - skills
-          - languages
       template: moderncv-banking
       typography:
         # LaTeX engine only supports 10pt, 11pt, and 12pt
