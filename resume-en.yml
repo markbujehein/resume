@@ -11,7 +11,7 @@ content:
     basics:
         name: Mark Buje Hein Sørensen
         # headline: Neutron & X‑ray Scattering · Neutronics · Materials Science · Computational Chemistry
-        headline: Nanoscientist | Neutron & X‑ray Scattering | Materials Science
+        headline: Nanoscientist | Neutron & X‑ray Scattering | Neutronics | Computational Chemistry
         # phone: ""
         # email: ""
         # url: ""
@@ -23,10 +23,10 @@ content:
         # - ordered list, unordored list and nested sub list
         # - links (e.g. `[link](https://ppresume.com)`)
         summary: |
-            - "MSc Research: Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data; thesis grade 12 (A); viva May 2026."
-            - "Beamline Experience: Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, B07 VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection."
-            - "Nanoscience: Broad experimental, computational, and analysis experience across physics, materials engineering, and bioengineering."
-            - "Statistics & ML: Python-based data analysis, applied statistics & ML, Monte‑Carlo simulation (incl. McStas, NCrystal) and Mantid workflows; implemented GNN for anylysis of data from test beamline being developed for CERN."
+            - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
+            - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
+            - **Nanoscience:** Broad experimental, computational, and analytic experience across physics, materials engineering, and bioengineering.
+            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation (incl. McStas, NCrystal); implemented GNN for anylysis of data from test beamline being developed for CERN.
             
     location:
         # address: ""
@@ -57,7 +57,7 @@ content:
             - "Quantum Nanoelectronics"
             - "Computational Chemistry"
           summary: |
-            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa Bordallo, NBI, & Svemir Rudić, ISIS).
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data from VESUVIO and TOSCA (Supervisors: Heloisa Bordallo, NBI, & Svemir Rudić, ISIS). Was taught data reduction and data analysis of QENS, Neutron Compton Scattering, and Neutron Diffraction.
             - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
             - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
             # - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
@@ -92,10 +92,10 @@ content:
             - "Inorganic Chemistry, Organic Chemistry, Biochemistry"
             - "Microbiology"
           summary: |
-            - **Extended Credit (232.5 ECTS)**: Fundamentally interdisciplinary education with an extended credit total due to a transfer from Aalborg University (Nanotechnology) to the University of Copenhagen (Nanoscience).
-            - **Materials Characterisation & Fabrication (AAU)**: Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects, as per the problem- & project-based learning (PBL) model.
-            - **Theoretical & Computational Physics (UCPH)**: Bridged practical engineering with fundamental physics and chemistry, focusing heavily on computational simulation & data analysis using Python and numerous software suites.
-            - **Interdisciplinary Scope**: Broad set of knowledge, skills, and competences across physics, materials engineering, and bioengineering.
+            - **Extended Credit (232.5 ECTS):** Fundamentally interdisciplinary education with an extended credit total due to a transfer from Aalborg University (Nanotechnology) to the University of Copenhagen (Nanoscience).
+            - **Materials Characterisation & Fabrication (AAU):** Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects, as per the problem- & project-based learning (PBL) model.
+            - **Theoretical & Computational Physics (UCPH):** Bridged practical engineering with fundamental physics and chemistry, focusing heavily on computational simulation & data analysis using Python and numerous software suites.
+            - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, materials engineering, and bioengineering.
 
     # work: !include sections/work.yml
     work:
@@ -132,6 +132,12 @@ content:
         - language: German
           fluency: Minimum Professional Proficiency
           keywords: []
+        - language: Swedish
+          fluency: Limited Working Proficiency
+        - language: Spanish
+          fluency: Elementary Proficiency
+        - language: Czech
+          fluency: Elementary Proficiency
     
     # skills: !include sections/skills.yml
     skills:
@@ -237,6 +243,13 @@ content:
     
     # volunteer: !include sections/volunteer.yml
     volunteer:
+    
+      - organization: "Radikale Venstre"
+        url: ""
+        position: "Member of the Board"
+        startDate: "Sep, 2025"
+        # endDate: ""
+    
       - organization: "IDA"
         url: ""
         position: "Member of the Board of Representatives"
@@ -270,12 +283,6 @@ content:
           - Chaired a policy development group focused on Forskningsreserven 2024.
           - Saught expert advice and developed eleborate workshop protocol for initial work weeking.
           - Coordinated and led drafting of policy inputs, creating recomedations for party MPs.
-
-      - organization: "Radikale Venstre"
-        url: ""
-        position: "Member of the Board"
-        startDate: "2025"
-        # endDate: ""
 
       - organization: "Studentersamfundet (Aalborg University)"
         url: ""
