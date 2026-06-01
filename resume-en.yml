@@ -18,7 +18,7 @@ content:
             - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
             - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
             - **Nanoscience:** Broad experimental, computational, and analytic experience across physics, materials engineering, and bioengineering.
-            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation (incl. McStas, NCrystal); implemented GNN for anylysis of data from test beamline being developed for CERN.
+            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation (incl. McStas, NCrystal); implemented GNN for analysis of data from test beamline being developed for CERN.
             
     location:
         # address: ""
@@ -50,7 +50,7 @@ content:
             - "Computational Chemistry"
           summary: |
             - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa N. Bordallo & Svemir Rudić).
-            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
+            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA; POLARIS in supporting capacity), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
             - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS); extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
             # - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
             # Was taught data reduction and data analysis of QENS, Neutron Compton Scattering, and Neutron Diffraction.
@@ -100,7 +100,7 @@ content:
         summary: |
           - Responsible for financial management and strategic planning of a large student organisation; oversaw an annual budget exceeding DKK 1.5M.
           - Supervised the Business Team and monitored revenue from multiple student bars.
-          - Implemented cost-saving measures, including transitioning the physical magasine to a digital format to address rising costs.
+          - Implemented cost-saving measures, including transitioning the physical magazine to a digital format to address rising costs.
           - Participated in hiring processes and collaborated with the board to improve financial transparency.
           - Trained volunteers in very basic budgeting and microeconomics.
         keywords:
@@ -148,7 +148,7 @@ content:
       keywords:
         - Applied Statistics
         - Neural Networks
-        - Decicison trees
+        - Decision trees
         - Supervised Learning
         - Unsupervised Learning
         - Monte Carlo simulation
@@ -169,7 +169,7 @@ content:
         - HTML
         - CSS
 
-    - name: Lanotechnology Lab Techniques
+    - name: Nanotechnology Lab Techniques
       level: Intermediate
       keywords:
         - FTIR
@@ -274,8 +274,8 @@ content:
         endDate: "Dec 1, 2023"
         summary: |
           - Chaired a policy development group focused on Forskningsreserven 2024.
-          - Saught expert advice and developed eleborate workshop protocol for initial work weeking.
-          - Coordinated and led drafting of policy inputs, creating recomedations for party MPs.
+          - Sought expert advice and developed an elaborate workshop protocol for an initial working meeting.
+          - Coordinated and led drafting of policy inputs, creating recommendations for party MPs.
 
       - organization: "Studentersamfundet (Aalborg University)"
         # url: ""
