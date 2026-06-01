@@ -300,13 +300,12 @@ locale:
 
 layouts:
     - engine: latex
-      template: jake
       sections:
         order:
           - basics
           - education
           - volunteer
-      template: moderncv-banking
+      template: jake
       typography:
         # LaTeX engine only supports 10pt, 11pt, and 12pt
         fontSize: 11pt
