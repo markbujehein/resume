@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version number (e.g., 0.0)"
+        required: false
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,8 +22,41 @@ jobs:
   build-and-release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # Required to fetch git tags for versioning
+
+      - name: Get version number
+        id: get_version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            echo "VERSION=${{ github.event.inputs.version }}" >> $GITHUB_ENV
+          else
+            # Query the GitHub API for the latest release tag
+            LATEST_TAG=$(gh release view --json tagName -q .tagName 2>/dev/null || echo "")
+            
+            if [ -z "$LATEST_TAG" ]; then
+              echo "VERSION=1.0" >> $GITHUB_ENV
+            else
+              # Extract the number and apply the exact incrementation math from your example
+              LATEST_VERSION=$(echo $LATEST_TAG | grep -oP 'v\K[0-9]+\.[0-9]+' || echo "1.0")
+              MAJOR=$(echo $LATEST_VERSION | cut -d. -f1)
+              MINOR=$(echo $LATEST_VERSION | cut -d. -f2)
+              NEW_MINOR=$((MINOR + 1))
+              
+              if [ $NEW_MINOR -gt 9 ]; then
+                NEW_MAJOR=$((MAJOR + 1))
+                NEW_MINOR=0
+              else
+                NEW_MAJOR=$MAJOR
+              fi
+              
+              echo "VERSION=$NEW_MAJOR.$NEW_MINOR" >> $GITHUB_ENV
+            fi
+          fi
 
       - name: Build resumes
         id: build
@@ -28,12 +66,24 @@ jobs:
             resume-en.yml
           verbose: false
 
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v6
+
+      - name: Install Copilot CLI
+        run: npm install -g @github/copilot
+
+      - name: Process with Copilot CLI
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.copilot_actions }}
+        run: |
+          copilot -p "Read the file resume-en.md. Clean up any formatting issues and ensure proper Markdown syntax. Maintain the structure and hierarchy, and remove any weird formatting artifacts. Keep the content exactly the same. IMPORTANT: Obfuscate sensitive information. Replace email addresses with the format 'username [dot] domain [at] tld' (e.g., john.doe@gmail.com -> john [dot] doe [at] gmail [dot] com). Replace phone numbers with spelled-out words for the numbers (e.g., +1-(123) 456-7890 -> +1-(123) four five six seven eight nine zero). Overwrite the file resume-en.md with the clean output." --allow-tool='shell(cat:*)' --allow-tool=write --no-ask-user
+
       - name: Create Release
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: v${{ github.run_number }}
-          name: Resume Build v${{ github.run_number }}
+          tag_name: v${{ env.VERSION }}
+          name: Resume Build v${{ env.VERSION }}
           files: |
             *.pdf
             *.tex
