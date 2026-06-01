@@ -1,5 +1,4 @@
 name: Spellcheck
-
 on:
   push:
     branches: [main]
@@ -16,13 +15,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  check:
+  build:
+    name: Spellcheck
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+    # The checkout step
+    - uses: actions/checkout@v6
+    - uses: rojopolis/spellcheck-github-actions@v0
+      name: Spellcheck
+      with:
+        source_files: resume-en.yml
+  # check:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v6
 
-      - name: Spellcheck
-        uses: igsekor/pyspelling-any@v1
-        # with:
-        #   configFile: '.my-custom-config.yml'
+  #     - name: Spellcheck
+  #       uses: igsekor/pyspelling-any@v1
+  #       # with:
+  #       #   configFile: '.my-custom-config.yml'
