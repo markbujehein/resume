@@ -45,6 +45,6 @@ jobs:
           files: |
             *.pdf
             *.tex
-          draft: true
-          prerelease: true
+          draft: false
+          prerelease: false
 
