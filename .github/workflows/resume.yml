@@ -42,8 +42,8 @@ jobs:
         with:
           name: resumes
           path: |
-            *.pdf
-            *.tex
+            output/generated/*.pdf
+            output/generated/*.tex
           retention-days: 7   # Automatically deletes old artifacts to save storage space
 
   release:
@@ -52,21 +52,26 @@ jobs:
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
-      
     steps:
       - name: Download compiled resumes
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v4
         with:
           name: resumes
+          path: cv-artifacts   # Downloads into a specific folder to match your previous setup
 
-      - name: Create GitHub Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Use the execution run number as a unique, non-colliding tag identifier
-          TAG_NAME="v${{ github.run_number }}"
-          
-          gh release create "$TAG_NAME" \
-            --title "Resume Version $TAG_NAME" \
-            --notes "Automated compiled production artifacts generated from commit ${{ github.sha }}." \
-            *.pdf *.tex
+      - name: Get current date for tag
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: resume-${{ steps.date.outputs.date }}
+          name: Resume Build ${{ steps.date.outputs.date }}
+          body: |
+            Automated production artifacts generated from commit ${{ github.sha }}.
+          files: |
+            output/*.pdf
+            output/src//*.tex
+          draft: true
+          prerelease: false
