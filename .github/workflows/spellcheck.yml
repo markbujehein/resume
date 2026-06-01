@@ -1,4 +1,4 @@
-name: Spellcheck
+name: Spellcheck Workflow
 on:
   push:
     branches: [main]
@@ -11,15 +11,16 @@ on:
 
 jobs:
   build:
-    name: Spellcheck
+    name: Spellcheck init
     runs-on: ubuntu-latest
     steps:
     # The checkout step
     - uses: actions/checkout@v6
     - uses: rojopolis/spellcheck-github-actions@v0
-      name: Spellcheck
+      name: Spellcheck - YAML
       with:
         source_files: resume-en.yml
+        task_name: YAML
   # check:
   #   runs-on: ubuntu-latest
   #   steps:
