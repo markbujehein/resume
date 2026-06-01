@@ -28,11 +28,11 @@ content:
             - "Statistics & ML: Python-based data analysis, applied statistics & ML, Monte‑Carlo simulation (incl. McStas, NCrystal) and Mantid workflows; implemented GNN for anylysis of data from test beamline being developed for CERN."
             
     location:
-        address: ""
+        # address: ""
         city: Copenhagen
-        region: ""
+        # region: ""
         country: Denmark
-        postalCode: ""
+        # postalCode: ""
       
     profiles:
         - network: LinkedIn
@@ -42,7 +42,7 @@ content:
     # education: !include sections/education.yml
     education:
         - institution: University of Copenhagen
-          url: https://www.ku.dk/en
+          # url: https://www.ku.dk/
           # Valid degree options:
           #
           # - 'Middle School'
@@ -54,7 +54,7 @@ content:
           # - 'Doctor'
           degree: Bachelor
           area: Nanoscience
-          score: ""
+          # score: ""
           # parseable date string
           startDate: Sep 1, 2023
           # Leave endDate blank to indicate "Present" (if applicable)
@@ -77,10 +77,10 @@ content:
             - **Interdisciplinary Scope**: Broad set of knowledge, skills, and competences across physics, materials engineering, and bioengineering.
         
         - institution: University of Copenhagen
-          url: https://www.ku.dk/en
+          # url: https://www.ku.dk/
           degree: Master
           area: "Nanoscience — Neutron & X-ray Science"
-          score: "Grade 12 (A) for 60 ECTS Master's Thesis"
+          # score: "Grade 12 (A) for 60 ECTS Master's Thesis"
           startDate: Sep 1, 2024
           endDate: Jul 1, 2026
           courses:
@@ -91,15 +91,15 @@ content:
             - "Quantum Nanoelectronics"
             - "Computational Chemistry"
           summary: |
-            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Assoc. Prof. Dr. Heloisa Bordallo, NBI, & Dr. Svemir Rudić, ISIS).
-            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV Laboratory (CoSAXS), Paul Scherrer Institut (CAMEA), and Diamond Light Source (VerSoX).
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated neutron moderator materials using computational modelling and analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa Bordallo, NBI, & Svemir Rudić, ISIS).
+            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA, POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
             - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS), supplemented by extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS) and the 2025 Theory Meets XFELs workshop.
-            - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
+            # - **Student Advocacy**: Engaged in student politics, volunteer leadership, and organisational activities as a board member of IDA STEM Students. Worked with policy of research, innovation, and higher education, holding various positons of trust.
 
     # work: !include sections/work.yml
     work:
       - name: Studentersamfundet v/ Aalborg University
-        url: ""
+        # url: ""
         startDate: Sep, 2021
         endDate: Apr, 2023
         position: "Treasurer (Financial Officer)"
@@ -111,11 +111,9 @@ content:
           - Trained volunteers in very basic budgeting and microeconomics.
         keywords: |
           - Financial management
-          - Budgeting
-          - Strategic planning
           - Volunteer training
-          - Team leadership    
-    
+          - Team leadership
+          
     languages:
     # Valid language fluency options:
     #
@@ -243,6 +241,12 @@ locale:
 
 layouts:
     - engine: latex
+      sections:
+        order:
+          - education
+          - volunteer
+          - skills
+          - languages
       template: moderncv-banking
       typography:
         # LaTeX engine only supports 10pt, 11pt, and 12pt
