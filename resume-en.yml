@@ -258,7 +258,7 @@ content:
       position: "Board Member (Executive Committee)"
       startDate: "Feb 1, 2024"
       endDate: "Mar 1, 2026"
-      summary: |
+      summary:
         - Policy Officer - Higher Education.
 
     - organization: "Radikale Venstre"
@@ -309,3 +309,10 @@ layouts:
       typography:
         # LaTeX engine only supports 10pt, 11pt, and 12pt
         fontSize: 11pt
+    
+    - engine: markdown
+      sections:
+        order:
+          - basics
+          - education
+          - volunteer      
