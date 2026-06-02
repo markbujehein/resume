@@ -1,12 +1,12 @@
 name: Spellcheck Workflow
 on:
-  push:
-    branches: [main]
-    paths:
-      - '**/*.yml'
-      - '!.github/**/*.yml'
-  pull_request:
-    branches: [main]
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - '**/*.yml'
+  #     - '!.github/**/*.yml'
+  # pull_request:
+  #   branches: [main]
   workflow_dispatch:
 
 jobs:
