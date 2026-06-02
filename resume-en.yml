@@ -17,8 +17,8 @@ content:
         summary: |
             - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
             - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
-            - **Nanoscience:** Broad experimental, computational, and analytic experience across physics, materials engineering, and bioengineering.
-            - **Statistics & ML:** Python-based data analysis, applied statistics, Monte Carlo simulation, ML; made GNN using test beam data from the FoCal-E detector being developped for ALICE@CERN (exam project).
+            - **Statistics & ML:** Python-based data analysis, applied statistics, Monte Carlo simulation, ML; made NN using test beam data from the FoCal-E detector being developped for ALICE@CERN (exam project).
+            - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, quantum chemistry, materials engineering, and bioengineering; large toolset of characterisation methods.
             
     location:
         # address: ""
@@ -87,7 +87,6 @@ content:
             - **Materials Characterisation & Fabrication (AAU):** Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects (Problem-Based Learning).
             - **Theoretical & Computational Physics (UCPH):** Bridged practical engineering with fundamental physics and chemistry, focusing heavily on computational simulation & data analysis using Python and numerous software suites.
             - **Theoretical & Computational Physics (UCPH):** Deeper theoretical understandig of physics and physical chemistry; heavy focus computation, simulation, statistics, and data analysis.
-            - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, quantum chemistry, materials engineering, and bioengineering; large toolset of characterisation methods.
 
     # work: !include sections/work.yml
     work:
