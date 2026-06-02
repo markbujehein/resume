@@ -18,7 +18,8 @@ content:
             - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
             - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
             - **Nanoscience:** Broad experimental, computational, and analytic experience across physics, materials engineering, and bioengineering.
-            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation (incl. McStas, NCrystal); implemented GNN for analysis of data from test beamline being developed for CERN.
+            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation (incl. McStas, NCrystal); made GNN for FoCal-E detector being developped for ALICE@CERN (exam project).
+            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation; implemented GNN for analysis of data from test beamline being developed for CERN.
             
     location:
         # address: ""
@@ -49,9 +50,9 @@ content:
             - "Quantum Nanoelectronics"
             - "Computational Chemistry"
           summary: |
-            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using analysis of neutron transmission & inelastic neutron scattering data (Supervisors: Heloisa N. Bordallo & Svemir Rudić).
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using analysis of neutron transmission & inelastic neutron scattering data FROM VESUVIO and TOSCA; supervised by Heloisa Bordallo (NBI; ESS) & Svemir Rudić (TOSCA, ISIS) and taught by Matthew Krzystyniak (VESUVIO, ISIS). Worked with NCrystal, Quantum ESPRESSO, CRYSTAL, Mantid.
             - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA; POLARIS in supporting capacity), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
-            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS); extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS).
+            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS); extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS). Worked with ORCA, Gaussian, DIRAC, Dalton, CFOUR, PySCF, Psi4.
             
         - institution: University of Copenhagen
           # url: https://www.ku.dk/
@@ -151,7 +152,6 @@ content:
         - Unsupervised Learning
         - Monte Carlo simulation
         - SasView
-        - Mantid
         - ATSAS
         - FullProf
         
@@ -235,11 +235,11 @@ content:
     # volunteer: !include sections/volunteer.yml
     volunteer:
     
-      - organization: "Radikale Venstre – Danish Social Liberal Party"
-        # url: ""
-        position: "Member of the Board"
-        startDate: "Sep, 2025"
-        # endDate: ""
+      # - organization: "Radikale Venstre – Danish Social Liberal Party"
+      #   # url: ""
+      #   position: "Member of the Board"
+      #   startDate: "Sep, 2025"
+      #   # endDate: ""
     
       - organization: "IDA – The Danish Society of STEM Professionals"
         # url: ""
@@ -285,11 +285,11 @@ content:
           - Served as kitchen manager during orientation courses, organising catering and volunteer shifts.
           - Trained and supervised volunteers; helped run events and logistics during orientation periods.
         
-      - organization: "Aalborg City Gymnasium"
-        # url: ""
-        position: "Chair of the Student Council"
-        startDate: "Oct, 2017"
-        endDate: "Jun, 2018"
+      # - organization: "Aalborg City Gymnasium"
+      #   # url: ""
+      #   position: "Chair of the Student Council"
+      #   startDate: "Oct, 2017"
+      #   endDate: "Jun, 2018"
 
 locale:
     language: en
