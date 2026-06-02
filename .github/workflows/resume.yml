@@ -1,9 +1,14 @@
 name: Build and Deploy Resume
 
 on:
-  workflow_run:
-    workflows: ["Spellcheck Workflow"]
-    # types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - '**/*.yml'
+      - '!.github/**/*.yml'
+  # workflow_run:
+  #   workflows: ["Spellcheck Workflow"]
+  #   types: [completed]
   workflow_dispatch:
     inputs:
       version:
