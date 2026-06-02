@@ -18,8 +18,7 @@ content:
             - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
             - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
             - **Nanoscience:** Broad experimental, computational, and analytic experience across physics, materials engineering, and bioengineering.
-            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation (incl. McStas, NCrystal); made GNN for FoCal-E detector being developped for ALICE@CERN (exam project).
-            - **Statistics & ML:** Python-based data analysis, applied statistics & ML, and Monte‑Carlo simulation; implemented GNN for analysis of data from test beamline being developed for CERN.
+            - **Statistics & ML:** Python-based data analysis, applied statistics, Monte Carlo simulation, ML; made GNN using test beam data from the FoCal-E detector being developped for ALICE@CERN (exam project).
             
     location:
         # address: ""
@@ -50,9 +49,9 @@ content:
             - "Quantum Nanoelectronics"
             - "Computational Chemistry"
           summary: |
-            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderator materials using analysis of neutron transmission & inelastic neutron scattering data FROM VESUVIO and TOSCA; supervised by Heloisa Bordallo (NBI; ESS) & Svemir Rudić (TOSCA, ISIS) and taught by Matthew Krzystyniak (VESUVIO, ISIS). Worked with NCrystal, Quantum ESPRESSO, CRYSTAL, Mantid.
-            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA; POLARIS in supporting capacity), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
-            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS); extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS). Worked with ORCA, Gaussian, DIRAC, Dalton, CFOUR, PySCF, Psi4.
+            - **Thesis Research (60 ECTS, Grade: 12)**: Investigated candidate neutron moderators using analysis of neutron transmission & inelastic neutron scattering data (VESUVIO; TOSCA); supervised by Heloisa Bordallo (NBI; ESS) & Svemir Rudić (TOSCA, ISIS) and taught by Matthew Krzystyniak (VESUVIO, ISIS).
+            - **Large-Scale Facility Experience**: Participated in six beamtimes, at the ISIS Neutron and Muon Source (TOSCA; POLARIS), MAX IV (CoSAXS), Paul Scherrer Institute (CAMEA), and Diamond Light Source (VerSoX).
+            - **Advanced Coursework & Training**: Completed specialised modules in X-ray and neutron science (22.5 ECTS) and computational methods (22.5 ECTS); extracurricular participation in the 2025 NNSP-SwedNess Neutron Summer School (4 ECTS).
             
         - institution: University of Copenhagen
           # url: https://www.ku.dk/
@@ -85,9 +84,10 @@ content:
             - "Microbiology"
           summary: |
             - **Extended Credit (232.5 ECTS):** Fundamentally interdisciplinary education with an extended credit total due to a transfer from Aalborg University (Nanotechnology) to the University of Copenhagen (Nanoscience).
-            - **Materials Characterisation & Fabrication (AAU):** Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects, as per the problem- & project-based learning (PBL) model.
+            - **Materials Characterisation & Fabrication (AAU):** Trained in hands-on characterisation, design, and fabrication of Nanostructured Materials through long-term group projects (Problem-Based Learning).
             - **Theoretical & Computational Physics (UCPH):** Bridged practical engineering with fundamental physics and chemistry, focusing heavily on computational simulation & data analysis using Python and numerous software suites.
-            - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, materials engineering, and bioengineering.
+            - **Theoretical & Computational Physics (UCPH):** Deeper theoretical understandig of physics and physical chemistry; heavy focus computation, simulation, statistics, and data analysis.
+            - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, quantum chemistry, materials engineering, and bioengineering; large toolset of characterisation methods.
 
     # work: !include sections/work.yml
     work:
@@ -142,18 +142,22 @@ content:
     # - 'Expert'
     # - 'Master'
 
-    - name: Machine Learning & Data Analysis
+    - name: Statistics & Data Analysis
       level: Intermediate
       keywords:
-        - Applied Statistics
-        - Neural Networks
-        - Decision trees
-        - Supervised Learning
-        - Unsupervised Learning
-        - Monte Carlo simulation
+        - Applied Statistics & Monte Carlo simulation
+        - Neural Networks & Decision trees
+        - (Un)supervised Learning
+        - GROMACS
+        - ORCA
+        - Gaussian
+        - Quantum ESPRESSO
+        - NCrystal
+        - McStas
+        - FullProf
         - SasView
         - ATSAS
-        - FullProf
+        - Mantid
         
     - name: Programming & Markup Languages
       level: Advanced
@@ -170,19 +174,21 @@ content:
     - name: Nanotechnology Lab Techniques
       level: Intermediate
       keywords:
+        - Evolved gas analysis
+        - DSC
         - FTIR
+        - UV‑Vis spectroscopy
+        - Fluorescence spectroscopy
+        - 1D-NMR spectroscopy
+        - Atomic Force Microscopy
+        - Raman microscopy
+        - Nanoparticle Tracking Analysis
+        - GC
+        - UV Lithography
+        - Microfluidics
         - RT-PCR
         - SDS-PAGE
         - Agarose gel electrophoresis
-        - AFM
-        - Microfluidics
-        - UV‑Vis spectroscopy
-        - Fluorescence spectroscopy
-        - UV Lithography
-        - Evolved gas analysis
-        - GC
-        - DSC
-        - Nanoparticle Tracking Analysis
 
     - name: Project Management & Collaboration
       level: Intermediate
