@@ -84,40 +84,6 @@ jobs:
             *.md
           retention-days: 1
 
-  # Job 3: Independent, asynchronous processing of the Markdown file via Copilot
-  process-copilot:
-    needs: [init, build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Download raw resume files
-        uses: actions/download-artifact@v8
-        with:
-          name: raw-resume-files
-
-      - name: Set up Node.js environment
-        uses: actions/setup-node@v6
-
-      - name: Install Copilot CLI
-        run: npm install -g @github/copilot
-
-      - name: Process with Copilot CLI
-        env:
-          GH_TOKEN: ${{ secrets.COPILOT_ACTIONS }}
-        run: |
-          echo "${{ secrets.COPILOT_ACTIONS }}" | gh auth login --with-token
-          export COPILOT_GITHUB_TOKEN=$(gh auth token)
-          copilot -p "Read the file resume-en.md. Clean up any formatting issues and ensure proper Markdown syntax. Maintain the structure and hierarchy, and remove any weird formatting artifacts. Keep the content exactly the same. IMPORTANT: Obfuscate sensitive information. Replace email addresses with the format 'username [dot] domain [at] tld' (e.g., john.doe@gmail.com -> john [dot] doe [at] gmail [dot] com). Replace phone numbers with spelled-out words for the numbers (e.g., +1-(123) 456-7890 -> +1-(123) four five six seven eight nine zero). Overwrite the file resume-en.md with the clean output." --allow-tool='shell(cat:*)' --allow-tool=write --no-ask-user
-
-      - name: Upload processed Markdown artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: processed-resume-md
-          path: resume-en.md
-          retention-days: 1
-
   # Job 4: Automatic PDF deployment right after compilation finishes
   deploy-pdf:
     needs: [init, build]
@@ -136,26 +102,5 @@ jobs:
           name: Resume Build v${{ needs.init.outputs.version }}
           files: |
             *.pdf
-          draft: false
-          prerelease: false
-
-  # Job 5: Conditional deployment of the MD file, explicitly dependent on Copilot success
-  deploy-md:
-    needs: [process-copilot]
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
-    steps:
-      - name: Download processed Markdown
-        uses: actions/download-artifact@v8
-        with:
-          name: processed-resume-md
-
-      - name: Append obfuscated MD to GitHub Release
-        uses: softprops/action-gh-release@v3
-        with:
-          tag_name: v${{ needs.init.outputs.version }}
-          name: Resume Build v${{ needs.init.outputs.version }}
-          files: |
-            resume-en.md
           draft: false
           prerelease: false
