@@ -2,8 +2,8 @@
 content:
     basics:
         name: Mark Buje Hein Sørensen
-        # headline: Neutron & X‑ray Scattering · Neutronics · Materials Science · Computational Chemistry
-        headline: Neutron & X‑ray Scattering | Materials Science | Computational Chemistry
+        #headline: Nanotechnology & Nanoscience | Condensed Matter Physics | X-ray & Neutron Science
+        headline: Materials Physics | Advanced Characterisation & Simulation
         phone: "+45 30925053"
         email: "mark.buje@gmail.com"
         # url: ""
@@ -15,10 +15,14 @@ content:
         # - ordered list, unordored list and nested sub list
         # - links (e.g. `[link](https://ppresume.com)`)
         summary: |
-            - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
-            - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
-            - **Statistics & ML:** Python-based data analysis, applied statistics, Monte Carlo simulation, ML; made NN using test beam data from the FoCal-E detector being developped for ALICE@CERN (exam project).
-            - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, quantum chemistry, materials engineering, and bioengineering; large toolset of characterisation methods.
+            # - **MSc Research:** Thesis on neutron moderator evaluation combining computational methods as well as analysis of experimental neutron transmission and inelastic neutron scattering data.
+            # - **Beamline Experience:** Hands‑on beamtimes at ISIS, MAX IV, PSI and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX); sample prep, cryogen handling, gas loading equipment, and data collection.
+            # - **Statistics & ML:** Python-based data analysis, applied statistics, Monte Carlo simulation, ML; made NN using test beam data from the FoCal-E detector being developped for ALICE@CERN (exam project).
+            # - **Interdisciplinary Scope:** Broad set of knowledge, skills, and competences across physics, quantum chemistry, materials engineering, and bioengineering; large toolset of characterisation methods.
+            - **MSc Thesis (60 ECTS):** Evaluated neutron moderators by coupling computational modeling with the analysis of experimental neutron transmission and inelastic neutron scattering data.            
+            - **Advanced Characterization:** Participated in 6 beamtimes over 14 months at ISIS, MAX IV, PSI, and Diamond (TOSCA, CoSAXS, CAMEA, VerSoX). Proficient in independent facility operations, including sample prep, cryogen handling, gas loading, and in-situ data analysis.
+            - **Simulation & ML:** Conducted Python-based Monte Carlo simulations, applied statistics, and computational data analysis. Developed a neural network using test beam data for the ALICE@CERN FoCal-E detector upgrade.
+            - **Materials Physics:** Strong theoretical foundation in the quantum mechanics of how photons, neutrons, and electrons interact with soft and hard condensed matter, bridging physics, quantum chemistry, and materials engineering.
             
     location:
         # address: ""
