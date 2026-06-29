@@ -4,7 +4,7 @@ content:
         name: Mark Buje Hein Sørensen
         #headline: Nanotechnology & Nanoscience | Condensed Matter Physics | X-ray & Neutron Science
         headline: Materials Physics | Advanced Characterisation & Simulation
-        phone: "+45 30925053"
+        phone: "+45 30 92 50 53"
         email: "mark.buje@gmail.com"
         # url: ""
         # All summary fields supports a limited rich text capabilities in markdown
@@ -212,6 +212,16 @@ content:
     #     email: amanda.reynolds@usc.edu
     #     summary: |
     #       Andy Dufresne shows exceptional problem-solving skills and a solid understanding of programming concepts, he would bring immense value to any team or organization he becomes a part of.
+    references:
+      - name: Dr. Heloisa N. Bordallo, Associate Professor of Condensed Matter Physics, Niels Bohr Institute
+        phone: "+45 21 30 88 29"
+        relationship: MSc Thesis Supervisor
+        email: bordallo@nbi.ku.dk
+
+      - name: Dr. Svemir Rudić, TOSCA Instrument Scientist, ISIS Neutron and Muon Source
+        phone: "+44 77 1733 5550"
+        relationship: MSc Thesis Supervisor
+        email: svemir.rudic@stfc.ac.uk
     
     # projects: []
     #   - name: EduWeb
@@ -233,7 +243,7 @@ content:
         - name: Physical Pursuits
           keywords:
             - Bouldering
-            - Gymnastics Rings
+            - Rings (Gymnastics)
             - Calisthenics
             - Hiking
         - name: Culinary
