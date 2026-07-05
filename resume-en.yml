@@ -101,6 +101,18 @@ content:
 
     # work: !include sections/work.yml
     work:
+      - name: Niels Bohr Institute, University of Copenhagen
+        # url: ""
+        startDate: 1 Jul, 2026
+        endDate: ""
+        position: "Guest researcher"
+        summary: |
+          - Drafting a scientific manuscrift based on the research output of my MSc thesis, in collaboration with my thesis supervisors and collaborators at the ISIS Neutron and Muon Source.
+          - Running MD simulations (benchmarking) with a collaborator at NBI.
+        keywords:
+          - scientific writing
+          - Molecular Dynamics
+          - Academic collaboration 
       - name: Studentersamfundet – The Student Society at Aalborg University
         # url: ""
         startDate: Sep, 2021
